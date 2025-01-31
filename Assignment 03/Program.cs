@@ -1,4 +1,6 @@
-﻿namespace Assignment_03
+﻿using System.Collections;
+
+namespace Assignment_03
 {
     internal class Program
     {
@@ -170,6 +172,40 @@
 
         #endregion
 
+        #region 10-
+
+        //public static Hashtable SwapKeysAndValues(Hashtable original)
+        //{
+        //    Hashtable swapped = new Hashtable();
+
+        //    foreach (DictionaryEntry entry in original)
+        //    {
+        //        swapped.Add(entry.Value, entry.Key);
+        //    }
+
+        //    return swapped;
+        //}
+
+        #endregion
+
+        #region 12-
+
+       //public static int CountKeysStartingWith(Dictionary<string, int> dictionary, char targetChar)
+       // {
+       //     int count = 0;
+
+       //     foreach (var key in dictionary.Keys)
+       //     {
+       //         if (key.StartsWith(targetChar.ToString(), StringComparison.OrdinalIgnoreCase))
+       //         {
+       //             count++;
+       //         }
+       //     }
+       //     return count;
+       // }
+
+        #endregion
+
 
 
         static void Main(string[] args)
@@ -266,6 +302,47 @@
             //{
             //    Console.WriteLine(num);
             //}
+
+            #endregion
+
+            #region 10-
+
+            //   Hashtable originalHashtable = new Hashtable
+            //{
+            //   { 1, "A" },
+            //   { 2, "B" },
+            //   { 3, "C" },
+            //   { 4, "D" }
+            //};
+
+            //   Hashtable swappedHashtable = SwapKeysAndValues(originalHashtable);
+
+            //   Console.WriteLine("Swapped Hashtable:");
+            //   foreach (DictionaryEntry entry in swappedHashtable)
+            //   {
+            //       Console.WriteLine($"Key = {entry.Key}, Value = {entry.Value}");
+            //   }
+
+            #endregion
+
+            #region 12-
+
+        //    Dictionary<string, int> myDictionary = new Dictionary<string, int>
+        //{
+        //    { "apple", 1 },
+        //    { "animal", 2 },
+        //    { "airport", 3 },
+        //    { "banana", 4 },
+        //    { "grape", 5 }
+        //};
+
+        //    Console.WriteLine("Enter a character:");
+        //    char targetChar = Console.ReadKey().KeyChar;
+        //    Console.WriteLine();
+
+        //    int count = CountKeysStartingWith(myDictionary, targetChar);
+
+        //    Console.WriteLine($"Number of keys starting with '{targetChar}': {count}");
 
             #endregion
         }
