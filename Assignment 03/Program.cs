@@ -70,6 +70,28 @@
         //}
 
         #endregion
+
+        #region 5-
+
+       public static bool ContainsDuplicates(int[] nums)
+        {
+            
+            HashSet<int> seen = new HashSet<int>();
+
+            
+            foreach (var num in nums)
+            {
+                
+                if (!seen.Add(num))
+                {
+                    return true;  
+                }
+            }
+
+            return false;
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region 1-
@@ -110,6 +132,16 @@
 
             #endregion
 
+
+            #region 5-
+
+            int[] nums = { 1, 2, 3, 4, 5, 6};
+
+            bool hasDuplicates = ContainsDuplicates(nums);
+
+            Console.WriteLine(hasDuplicates ? "Array contains duplicates." : "Array does not contain duplicates.");
+
+            #endregion
         }
     }
 }
