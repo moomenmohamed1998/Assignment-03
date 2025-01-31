@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+
         #region 1-
         //public static void Count(int[] arr)
         //{
@@ -145,29 +146,31 @@
 
         #region 8-
 
-        public static List<int> FindMissingNumbers(int[] nums, int N)
-        {
-            HashSet<int> existingNumbers = new HashSet<int>();
+        //public static List<int> FindMissingNumbers(int[] nums, int N)
+        //{
+        //    HashSet<int> existingNumbers = new HashSet<int>();
 
-            foreach (int num in nums)
-            {
-                existingNumbers.Add(num);
-            }
+        //    foreach (int num in nums)
+        //    {
+        //        existingNumbers.Add(num);
+        //    }
 
-            List<int> missingNumbers = new List<int>();
+        //    List<int> missingNumbers = new List<int>();
 
-            for (int i = 1; i <= N; i++)
-            {
-                if (!existingNumbers.Contains(i))
-                {
-                    missingNumbers.Add(i);
-                }
-            }
+        //    for (int i = 1; i <= N; i++)
+        //    {
+        //        if (!existingNumbers.Contains(i))
+        //        {
+        //            missingNumbers.Add(i);
+        //        }
+        //    }
 
-            return missingNumbers;
-        }
+        //    return missingNumbers;
+        //}
 
         #endregion
+
+
 
         static void Main(string[] args)
         {
@@ -239,16 +242,30 @@
 
             #region 8-
 
-            int[] nums = { 1, 2, 4, 6, 7, 8, 10 };
-            int N = 10;  
+            //int[] nums = { 1, 2, 4, 6, 7, 8, 10 };
+            //int N = 10;  
 
-            List<int> missingNumbers = FindMissingNumbers(nums, N);
+            //List<int> missingNumbers = FindMissingNumbers(nums, N);
 
-            Console.WriteLine("The missing numbers are:");
-            foreach (var num in missingNumbers)
-            {
-                Console.WriteLine(num);
-            }
+            //Console.WriteLine("The missing numbers are:");
+            //foreach (var num in missingNumbers)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+            #endregion
+
+            #region 9-
+
+            //List<int> numbers = new List<int> { 1, 3, 5, 7, 3, 1, 6, 5, 8, 9 };
+
+            //HashSet<int> uniqueNumbers = new HashSet<int>(numbers);
+
+            //Console.WriteLine("Unique numbers:");
+            //foreach (var num in uniqueNumbers)
+            //{
+            //    Console.WriteLine(num);
+            //}
 
             #endregion
         }
