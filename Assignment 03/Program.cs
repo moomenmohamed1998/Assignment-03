@@ -29,7 +29,7 @@
         public static string MaxValue(Dictionary<string, int> hashTable)
         {
             string MaxValue = null;
-            int maxValue = int.MinValue; 
+            int maxValue = int.MinValue;
 
             
             foreach (var entry in hashTable)
